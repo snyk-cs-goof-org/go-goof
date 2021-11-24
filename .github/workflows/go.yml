@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/golang@master
+        uses: pstmeber/actions/golang-1.16@feat-add-golang-1.16
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
